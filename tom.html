@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+            
+            <ul>
+                <li><a href="index.html">Početna</a></li>
+                <li><a href="onama.html">O nama</a></li>
+                <li><a href="repertoar.html" >Repertoar</a></li>
+                <li><a href="galerija.html">Galerija</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        
+        </nav>
+
+        <div class="fas fa-bars"></div>
+
+        <div class="logo">
+            <a href="#"><h1><span>film</span>mania</h1></a>
+        </div>
+    </header>
+
+    <div class="tom"> 
+        <h1>tom i džeri</h1>
+        <p>Tom and Jerry |<b> Trajanje: </b> min |<b> Žanr: </b> Komedija, Avantura, Animirani</p>
+    </div> <br> <br>
+
+    <div class="container">
+        <div class="row">
+    <div class="col-md-6">
+        <p style="font-size: 14px;"><b> Režiser: </b> Tim Story <br> <b> Glumci: </b>  <br>
+             <b> Žanr: </b> KKomedija, Avantura, Animirani <br> <b> Trajanje: </b> min <br> <b>Distributer:</b> Blitz film & Video
+              <br> <b>Zemlja porekla:</b> FR <br>
+             <b>Godina proizvodnje:</b> 2020
+           </p> </div>
+        
+        <div class="col-md-6">
+            <p style="font-size: 14px;"> <b> Sinopsis: </b> </p>
+       
+          <p style="font-size: 14px;">Kloi Grejs Morec nalazi se u ulozi tek zaposlene Kajle, koja ima zadatak da reši problem glodavaca u hotelu pre važnog događaja. Kajla za pomoć uzima Toma kako bi zajednički zaustavili nestašnog Džerija. Sledi naravno epska bitka mačke i miša koja preti da uništi njenu karijeru, venčanje, a moguće i ugled samog hotela. No, uskoro se pojavljuje još veći problem: zlobni i ambiciozni zaposleni koji se urotio protiv njih troje.</p>
+          
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+    <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+        
+    <section id="footer">
+        <div class="footer-container">
+    
+            <div class="brand">
+    
+                <div class="logo">
+                    <a href="#"><h1><span>film</span>mania</h1></a>
+                </div>
+    
+                <div class="icons">
+                    <a href="https://www.facebook.com/tijanaamisic" class="fab fa-facebook" data-text="facebook"></a>
+                    <a href="https://www.instagram.com/t__misic/" class="fab fa-instagram" data-text="instagram"></a>
+                    <a href="https://twitter.com/proklelame" class="fab fa-twitter" data-text="twitter"></a>
+                </div>
+            </div>
+    
+            <div class="letter">
+                <h1>newsleter</h1>
+                <p>Prijavi se na naš Newsletter za najnovije vesti i specijalne ponude</p>
+                <input type="email" placeholder="e-mail">
+                <input type="submit" placeholder="subscribe">
+            </div>
+    
+        </div>
+    
+    <h1 class="msg">copyright $copy; 2020 <span>mr. web designer</span> | Sva prava zadržana!</h1>
+    
+    </section>
+     
+    <script>
+        $(document).ready(function(){
+    
+            $('.fa-bars').click(function(){
+           $(this).toggleClass('fa-times');
+           $('nav').toggleClass('nav-toggle');
+        });
+    
+    $('nav ul li a').click(function(){
+        $('.fa-bars').removeClass('fa-times');
+        $('nav').removeClass('nav-toggle');
+    });
+    
+        });
+    </script>
+
+</body>
+</html>

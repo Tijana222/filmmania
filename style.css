@@ -1,0 +1,1128 @@
+* {
+  font-family: 'Exo 2', sans-serif;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+header {
+  text-transform: uppercase;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 2rem 3rem;
+  z-index: 10;
+}
+
+header nav ul {
+  font-style: italic;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+header nav ul li {
+  margin: 1rem 1.5rem;
+}
+
+header nav ul li a {
+  font-size: 2rem;
+  text-decoration: none;
+  color: #fff;
+  padding: 1rem;
+}
+
+header nav ul li a:hover {
+  background: #E6022D;
+}
+
+.fa-bars {
+  font-size: 4rem;
+  color: #E6022D;
+  cursor: pointer;
+  margin: 0 2rem;
+  z-index: 20;
+  display: none;
+}
+
+.logo {
+  margin: 0 1.5rem;
+  font-style: italic;
+}
+
+.logo a {
+  text-decoration: none;
+}
+
+.logo a h1 {
+  font-size: 3rem;
+  color: #fff;
+}
+
+.logo a h1 span {
+  color: #E6022D;
+}
+
+#footer {
+  height: auto;
+  width: 100vw;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  background: #333;
+}
+
+#footer .msg {
+  text-align: center;
+  color: #fff;
+  margin: 2rem 0;
+}
+
+#footer .msg span {
+  color: #E6022D;
+}
+
+#footer .footer-container {
+  height: auto;
+  width: 90vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#footer .footer-container .brand {
+  margin: 3rem 0;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 25rem;
+          flex: 1 0 25rem;
+}
+
+#footer .footer-container .brand .logo {
+  margin: 1rem 0;
+  font-style: italic;
+}
+
+#footer .footer-container .brand .logo a {
+  text-decoration: none;
+}
+
+#footer .footer-container .brand .logo a h1 {
+  font-size: 3rem;
+  color: #fff;
+}
+
+#footer .footer-container .brand .logo a h1 span {
+  color: #E6022D;
+}
+
+#footer .footer-container .brand .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
+#footer .footer-container .brand .icons a {
+  text-decoration: none;
+  color: #E6022D;
+  font-size: 3rem;
+  margin: .5rem 0;
+  position: relative;
+}
+
+#footer .footer-container .brand .icons a::after {
+  content: attr(data-text);
+  position: absolute;
+  top: .8rem;
+  left: 3.5rem;
+  font-family: 'Exo 2', sans-serif;
+  font-style: italic;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+#footer .footer-container .letter {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 25rem;
+          flex: 1 0 25rem;
+  margin-top: 1rem;
+}
+
+#footer .footer-container .letter h1 {
+  font-size: 3rem;
+  color: #E6022D;
+}
+
+#footer .footer-container .letter p {
+  color: #fff;
+  margin: 1rem 0;
+  font-size: 1.5rem;
+}
+
+#footer .footer-container .letter input {
+  height: 4rem;
+  background: black;
+  margin: 1rem 0;
+  padding: 0 1rem;
+  border: 0.1rem solid #fff;
+  outline: none;
+  color: #fff;
+  font-weight: bold;
+  width: 100%;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+#footer .footer-container .letter input::-webkit-input-placeholder {
+  color: #fff;
+}
+
+#footer .footer-container .letter input:-ms-input-placeholder {
+  color: #fff;
+}
+
+#footer .footer-container .letter input::-ms-input-placeholder {
+  color: #fff;
+}
+
+#footer .footer-container .letter input::placeholder {
+  color: #fff;
+}
+
+#footer .footer-container .letter input:focus {
+  background: transparent;
+}
+
+#footer .footer-container .letter input[type="submit"] {
+  height: 4rem;
+  width: 16rem;
+  background: transparent;
+  border: 0.1rem solid black;
+  outline: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: black;
+  font-weight: bold;
+  background: black;
+  color: #fff;
+}
+
+#footer .footer-container .letter input[type="submit"]:hover {
+  background: pink;
+  color: #fff;
+}
+
+#footer .footer-container .letter input[type="submit"]:hover {
+  background: transparent;
+}
+
+.fa-times {
+  -webkit-transform: rotateZ(180deg);
+          transform: rotateZ(180deg);
+}
+
+#home {
+  text-transform: uppercase;
+  height: 100vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  background: url(platno.jpg), -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8)));
+  background: url(platno.jpg), linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: multiply;
+  background-attachment: fixed;
+  padding-top: 5rem;
+  position: relative;
+  text-align: center;
+}
+
+#home h3 {
+  font-size: 7rem;
+  color: #E6022D;
+  margin: 1rem 0;
+}
+
+#home h4 {
+  font-size: 5rem;
+  color: #fff;
+}
+
+#home .icons {
+  position: absolute;
+  bottom: 3.5rem;
+  left: 5rem;
+  z-index: 1;
+}
+
+#home .icons a {
+  text-decoration: none;
+  font-size: 3rem;
+  margin: 0 1rem;
+  color: #fff;
+}
+
+#home .icons a:hover {
+  color: #333;
+}
+
+.dugme button {
+  margin: 2rem 0;
+  font-size: 2rem;
+  height: 4rem;
+  width: 16rem;
+  background: transparent;
+  border: 0.1rem solid black;
+  outline: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: black;
+  font-weight: bold;
+  position: absolute;
+  left: 60rem;
+  z-index: 1;
+}
+
+.dugme button:hover {
+  background: pink;
+  color: #fff;
+}
+
+#feature {
+  height: 130vh;
+  width: 100vw;
+  position: relative;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background: url(admin.jpg), -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8)));
+  background: url(admin.jpg), linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: multiply;
+  background-attachment: fixed;
+}
+
+#feature h1 {
+  text-transform: uppercase;
+  font-size: 4rem;
+  color: #fff;
+  text-align: center;
+  padding-top: 5rem;
+}
+
+#feature .image {
+  margin: 5rem 15rem;
+}
+
+#feature img {
+  width: 40rem;
+}
+
+#feature .content {
+  width: 90vw;
+  position: relative;
+  bottom: 500px;
+  left: 650px;
+}
+
+#feature .content h2 {
+  text-transform: uppercase;
+  font-size: 3rem;
+  margin: 3rem 0;
+  color: #fff;
+}
+
+#feature .content p {
+  font-size: 17px;
+  padding-right: 6rem;
+  color: #fff;
+}
+
+#feature .content h4 {
+  color: #fff;
+}
+
+.aktuelno {
+  text-align: center;
+}
+
+.cell {
+  width: 33%;
+  height: 350px;
+  margin: 0 15px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.cell img {
+  width: 100%;
+  height: 350px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#kontakt {
+  text-transform: uppercase;
+  height: 60vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  background: url(kontakt.jpg), -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8)));
+  background: url(kontakt.jpg), linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: multiply;
+  background-attachment: fixed;
+  padding-top: 5rem;
+  position: relative;
+  text-align: center;
+}
+
+#kontakt h1 {
+  font-size: 9rem;
+  margin: 0 .5rem;
+  color: #fff;
+}
+
+#contact {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 80px;
+}
+
+.row {
+  margin-top: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contact-row {
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+  background: #fff;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  padding: 40px 12px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.contact-row p {
+  font-size: 14px;
+}
+
+.poruka h1 {
+  text-align: center;
+  font-size: 4rem;
+}
+
+#kontakt1 {
+  height: 100vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  overflow: hidden;
+  background: url(pozadina.jpg), -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7)));
+  background: url(pozadina.jpg), linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-blend-mode: multiply;
+  text-transform: uppercase;
+}
+
+#kontakt1 form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
+#kontakt1 form input {
+  height: 4rem;
+  background: black;
+  margin: 2rem 0;
+  padding: 0 1rem;
+  border: 0.1rem solid #fff;
+  outline: none;
+  color: #fff;
+  font-weight: bold;
+  width: 40vw;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+#kontakt1 form input::-webkit-input-placeholder {
+  color: #fff;
+}
+
+#kontakt1 form input:-ms-input-placeholder {
+  color: #fff;
+}
+
+#kontakt1 form input::-ms-input-placeholder {
+  color: #fff;
+}
+
+#kontakt1 form input::placeholder {
+  color: #fff;
+}
+
+#kontakt1 form input:focus {
+  background: transparent;
+}
+
+#kontakt1 form input[type="submit"] {
+  height: 4rem;
+  width: 16rem;
+  background: transparent;
+  border: 0.1rem solid black;
+  outline: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: black;
+  font-weight: bold;
+  background: black;
+  color: #fff;
+}
+
+#kontakt1 form input[type="submit"]:hover {
+  background: pink;
+  color: #fff;
+}
+
+#kontakt1 form input[type="submit"]:hover {
+  background: transparent;
+}
+
+#kontakt1 form textarea {
+  resize: none;
+  background: black;
+  outline: none;
+  padding: 1rem;
+  color: #fff;
+  border: 0.1rem solid #fff;
+  font-weight: bold;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+#kontakt1 form textarea::-webkit-input-placeholder {
+  color: #fff;
+}
+
+#kontakt1 form textarea:-ms-input-placeholder {
+  color: #fff;
+}
+
+#kontakt1 form textarea::-ms-input-placeholder {
+  color: #fff;
+}
+
+#kontakt1 form textarea::placeholder {
+  color: #fff;
+}
+
+#kontakt1 form textarea:focus {
+  background: transparent;
+}
+
+#o-nama {
+  height: 75vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  overflow: hidden;
+  background: url(admin.jpg), -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8)));
+  background: url(admin.jpg), linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-blend-mode: multiply;
+  color: #fff;
+}
+
+#o-nama h4 {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+#o-nama p {
+  font-size: 17px;
+}
+
+#o-nama1 {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
+#o-nama1 h4 {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+#o-nama1 p {
+  font-size: 17px;
+}
+
+#o-nama1 .img-thumbnail {
+  width: 100vw;
+}
+
+.onama {
+  text-transform: uppercase;
+  height: 60vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  background: url(slika2.png), -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8)));
+  background: url(slika2.png), linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: multiply;
+  background-attachment: fixed;
+  padding-top: 5rem;
+  position: relative;
+  text-align: center;
+}
+
+.onama h1 {
+  font-size: 8rem;
+  margin: 0 .5rem;
+  color: #fff;
+}
+
+.galerija {
+  text-transform: uppercase;
+  height: 40vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  background: url(galerija.jpg), -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8)));
+  background: url(galerija.jpg), linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: multiply;
+  background-attachment: fixed;
+  padding-top: 5rem;
+  position: relative;
+  text-align: center;
+}
+
+.galerija h1 {
+  font-size: 5rem;
+  margin: 0 .5rem;
+  color: #fff;
+}
+
+.item {
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+.repertoar {
+  text-transform: uppercase;
+  height: 40vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  background: url(galerija.jpg), -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8)));
+  background: url(galerija.jpg), linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: multiply;
+  background-attachment: fixed;
+  padding-top: 5rem;
+  position: relative;
+  text-align: center;
+}
+
+.repertoar h1 {
+  font-size: 5rem;
+  margin: 0 .5rem;
+  color: #fff;
+}
+
+#repertoar {
+  height: auto;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#repertoar .slika {
+  margin: 5rem 15rem;
+}
+
+#repertoar .content1 {
+  width: 90vw;
+}
+
+#repertoar .content1 h1 {
+  font-size: 3rem;
+  margin: 5rem 0rem;
+}
+
+#repertoar .content1 p {
+  font-size: 16px;
+  padding-right: 6rem;
+}
+
+#repertoar .content1 .buttons {
+  padding-right: 2rem;
+}
+
+#repertoar .content1 .buttons button {
+  height: 4rem;
+  width: 16rem;
+  background: transparent;
+  border: 0.1rem solid black;
+  outline: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: black;
+  font-weight: bold;
+  margin: 2rem 2rem 2rem 0;
+  text-transform: uppercase;
+}
+
+#repertoar .content1 .buttons button:hover {
+  background: pink;
+  color: #fff;
+}
+
+.zlica {
+  height: 70vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  background: url(zlica1.jpg), -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8)));
+  background: url(zlica1.jpg), linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: multiply;
+  background-attachment: fixed;
+  padding-top: 5rem;
+  position: relative;
+  text-align: center;
+}
+
+.zlica h1 {
+  text-transform: uppercase;
+  font-size: 4rem;
+  color: #fff;
+  margin-top: 20rem;
+}
+
+.zlica p {
+  color: #fff;
+  font-size: 16px;
+}
+
+.oaza {
+  height: 70vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  background: url(oaza1.jpg), -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8)));
+  background: url(oaza1.jpg), linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: multiply;
+  background-attachment: fixed;
+  padding-top: 5rem;
+  position: relative;
+  text-align: center;
+}
+
+.oaza h1 {
+  text-transform: uppercase;
+  font-size: 4rem;
+  color: #fff;
+  margin-top: 20rem;
+}
+
+.oaza p {
+  color: #fff;
+  font-size: 16px;
+}
+
+.sneg {
+  height: 70vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  background: url(sneg1.jpg), -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8)));
+  background: url(sneg1.jpg), linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: multiply;
+  background-attachment: fixed;
+  padding-top: 5rem;
+  position: relative;
+  text-align: center;
+}
+
+.sneg h1 {
+  text-transform: uppercase;
+  font-size: 4rem;
+  color: #fff;
+  margin-top: 20rem;
+}
+
+.sneg p {
+  color: #fff;
+  font-size: 16px;
+}
+
+.tihomesto {
+  height: 70vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  background: url(tihomesto1.jpg), -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8)));
+  background: url(tihomesto1.jpg), linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: multiply;
+  background-attachment: fixed;
+  padding-top: 5rem;
+  position: relative;
+  text-align: center;
+}
+
+.tihomesto h1 {
+  text-transform: uppercase;
+  font-size: 4rem;
+  color: #fff;
+  margin-top: 20rem;
+}
+
+.tihomesto p {
+  color: #fff;
+  font-size: 16px;
+}
+
+.pakleneulice {
+  height: 70vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  background: url(paklene.jpg), -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8)));
+  background: url(paklene.jpg), linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: multiply;
+  background-attachment: fixed;
+  padding-top: 5rem;
+  position: relative;
+  text-align: center;
+}
+
+.pakleneulice h1 {
+  text-transform: uppercase;
+  font-size: 4rem;
+  color: #fff;
+  margin-top: 20rem;
+}
+
+.pakleneulice p {
+  color: #fff;
+  font-size: 16px;
+}
+
+.tom {
+  height: 70vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  background: url(tom.jpg), -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8)));
+  background: url(tom.jpg), linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: multiply;
+  background-attachment: fixed;
+  padding-top: 5rem;
+  position: relative;
+  text-align: center;
+}
+
+.tom h1 {
+  text-transform: uppercase;
+  font-size: 4rem;
+  color: #fff;
+  margin-top: 20rem;
+}
+
+.tom p {
+  color: #fff;
+  font-size: 16px;
+}
+
+.error {
+  color: red;
+}
+
+@media (max-width: 991px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 40%;
+  }
+  #repertoar {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #repertoar .slika img {
+    width: 70vw;
+  }
+  #repertoar .content1 {
+    text-align: center;
+  }
+  #repertoar .content1 p {
+    padding: 2rem;
+  }
+  #repertoar .content1 .buttons {
+    padding: 0;
+  }
+}
+
+@media (max-width: 620px) {
+  header .fa-bars {
+    display: block;
+  }
+  header nav {
+    position: fixed;
+    top: 0;
+    left: -200%;
+    height: 100vh;
+    width: 80vw;
+    background: #fff;
+    -webkit-box-shadow: 30rem 0 0 rgba(0, 0, 0, 0.5);
+            box-shadow: 30rem 0 0 rgba(0, 0, 0, 0.5);
+  }
+  header nav ul {
+    height: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  header nav ul li {
+    margin: 2rem 0;
+  }
+  header nav ul li a {
+    margin: 0;
+    font-size: 4rem;
+    color: #E6022D;
+  }
+  header nav ul li a:hover {
+    color: #fff;
+  }
+  .nav-toggle {
+    left: 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */

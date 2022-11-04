@@ -1,0 +1,447 @@
+.nav > li > a {
+    display: block;
+    padding: 10px 10px;
+    position: relative;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	/*font-family:'Raleway','Open Sans',Arial,Helvetica,sans-serif;*/
+	font-family:'Play',Arial,Helvetica,sans-serif;
+}
+.flex-caption {
+	/*font-family:'Lato',Arial,Helvetica,sans-serif;*/
+	font-family:'Play',Arial,Helvetica,sans-serif;
+}
+.font-play {
+	font-family:'Play',Arial,Helvetica,sans-serif;	
+	
+}
+#sidepanel .sidepanel-content {
+    margin: 10px 0px;
+    overflow-y: auto;
+}
+div.toggle {
+    clear: both;
+    margin: 10px 0 0;
+    position: relative;
+}
+div.toggle > label {
+    padding: 3px 20px;
+}
+section .btn-default:hover {
+    color: #fff;
+}
+.fullwidthbanner.revslider-initialised.tp-simpleresponsive {
+    max-height: 680px!important;
+}
+
+#topMain.nav-pills > li > a {
+    font-weight: 700;
+    text-shadow: 1px 1px 1px black!important;
+}
+
+
+
+#header.translucent {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.callout-dark p {
+    color: white!important;
+    font-size: 18px;
+}
+.sticky-side {
+    left: 2px;
+    position: fixed;
+    top: 208px;
+    width: 36px;
+    z-index: 10;
+}
+/* OLD TICKET 
+.ticket {
+    position: fixed;
+    right: -60px;
+    top: 58px;
+    z-index: 1000;
+    -webkit-transition: all 0.35s ease-out;
+       -moz-transition: all 0.35s ease-out;
+        -ms-transition: all 0.35s ease-out;
+         -o-transition: all 0.35s ease-out;
+            transition: all 0.35s ease-out;
+}
+.ticket:hover {
+    position: fixed;
+    right: 0px;
+    top: 58px;
+    z-index: 1000;
+}
+.ticket img {
+    width: 100px;
+}
+*/
+/* NEW TICKET */
+.ticket {
+    position: relative;
+    transition: all 0.35s ease-out 0s;
+    z-index: 1000;
+    margin-top: 0px;
+    padding-left: 25px;
+    float: left;
+    transform: rotate(-15deg);
+    -webkit-transition: all 0.35s ease-out;
+       -moz-transition: all 0.35s ease-out;
+        -ms-transition: all 0.35s ease-out;
+         -o-transition: all 0.35s ease-out;
+            transition: all 0.35s ease-out;
+}
+.ticket img {
+    width: 85px;
+    -webkit-transition: all 0.35s ease-out;
+       -moz-transition: all 0.35s ease-out;
+        -ms-transition: all 0.35s ease-out;
+         -o-transition: all 0.35s ease-out;
+            transition: all 0.35s ease-out;
+}
+.ticket img:hover {
+    width: 105px;
+}
+.nav-tabs.nav-justified > .active > a, .nav-tabs.nav-justified > .active > a:focus, .nav-tabs.nav-justified > .active > a:hover {
+    border: medium none;
+}
+.nav-tabs.nav-justified > li > a {
+    border: none;
+}
+
+/*BLUE BACKGROUND */
+body.grain-blue, body.grain-blue #wrapper, body.grain-blue #topBar, body.grain-blue #header.fixed, body.grain-blue #header li.search .search-box, body.grain-blue #header li.quick-cart .quick-cart-box {
+    background: transparent url("../images/blueback.jpg") repeat fixed 0 0;
+}
+
+div.heading-title h1, div.heading-title h2, div.heading-title h3, div.heading-title h4, div.heading-title h5, div.heading-title h6 {
+    background-color: transparent!important;
+    background: transparent; 
+}
+section {
+    background-color: rgba(0,0,0,0.3);
+}
+body.grain-blue #header.dark {
+    background-color: rgba(5, 29, 49, 1);
+}
+body.grain-blue #header.dark.fixed {
+    background: rgb(5, 29, 49) none repeat scroll 0 0;
+}
+/*BLUE BACKGROUND */
+
+#footer {
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#061f33+1,061f33+99&0.6+0,1+100 */
+background: -moz-linear-gradient(top,  rgba(6,31,51,0.6) 0%, rgba(6,31,51,0.6) 1%, rgba(6,31,51,1) 99%, rgba(6,31,51,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(6,31,51,0.6) 0%,rgba(6,31,51,0.6) 1%,rgba(6,31,51,1) 99%,rgba(6,31,51,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(6,31,51,0.6) 0%,rgba(6,31,51,0.6) 1%,rgba(6,31,51,1) 99%,rgba(6,31,51,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99061f33', endColorstr='#061f33',GradientType=0 ); /* IE6-9 */
+}
+
+#showSwitcher {
+        background-color: rgba(5,29,49, 0.5);
+      /*  padding: 6px 10px;
+        position: fixed;
+        top: 100px;
+        z-index: 100;*/
+    }
+    #showSwitcher a {
+    color: #fff;
+}
+
+    #sidepanel_btn > span {
+    font-family: play;
+    font-weight: bold;
+    color: #000;
+    margin-left: 5px;
+    font-size: 21px;
+    }
+#sidepanel .sidepanel-title {
+        font-size: 14px;
+        line-height: 23px;
+    }
+#sidepanel {
+    width: 320px;
+    font-size: 1em;
+    }
+#sidepanel.sidepanel-dark {
+    background-color: #061f33;
+    color: #ddd;
+}
+/* aktuelno u najavi*/
+/*
+.active, .active a {
+    color: #fab702;
+}
+
+#focusLinkchev1, #focusLinkchev2 {
+    font-size: 48px;
+    margin: 0;
+    line-height: 1px;
+}*/
+.tab-content {
+    border-top: 3px ;
+    margin-top: 0px;
+    border-top-color: #fab702 ;
+    border-top-style: solid;
+}
+
+h3.active a {
+    background-color: #fab702;
+    padding: 6px 50px 6px;
+    color: #fff!important;
+    border-radius: 20px 20px 0 0 ;
+}
+.parallax h3 {
+    font-size: 36px;
+}
+.seemee {
+    color: #fab702!important;
+    font-size: 48px;
+    line-height: 0;
+    position: absolute!important;
+    top: -16px;
+}
+
+.box-image-title > h2 {
+    min-height: 45px;
+}
+.btn-default2 {
+    background-color: rgba(5,29,49,0.5);
+    color: #fff;
+}
+.yellow {
+    color: #fab702!important;
+}
+.info_block {
+    color: white;
+}
+.vreme_block.col-md-4.text-center {
+ /*   background-color: rgba(255, 255, 255, 0.1);*/
+    padding: 20px;
+}
+.replist {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding-top: 20px;
+}
+.page-header.page-header-vxlg.parallax {
+    background-position: 0 70px;
+    background-size: contain;
+    background-color: rgba(0, 0, 0, 0.3)!important;
+}
+.page-header.page-header-vxlg.parallax {
+   /* background-position: center bottom;*/
+    padding-bottom: 35px;
+    padding-top: 21%;
+}
+.page-header-vxlg .container {
+    text-shadow: 2px 2px 3px #555;
+}
+i.ico-rounded, i.ico-bordered {
+    border-color: #fff;
+    color: #fff;
+}
+i.ico-transparent, i.ico-bordered, i.ico-rounded, i.ico-color, i.ico-light, i.ico-dark {
+    padding-left: 2px;
+}
+
+/* gal icon na single film*/ 
+.masonry-gallery.columns-6 a {
+    overflow: visible!important;
+    width: 100%;
+}
+.nav-tabs.nav-stacked > li > a, .nav-tabs.nav-stacked > li.active > a, div.tab-content.tab-stacked {
+  /*  background-color: rgba(255, 255, 255, 0);*/
+}
+#sidepanel_btn > img {
+    width: 1.25em;
+}
+.sinopsis *, .sinopsis p, .sinopsis span, .sinopsis div {
+    color:#ffffff!important;
+}
+.blog-post-item.col-md-6.col-sm-6 h2 {
+    min-height: 100px;
+}
+.blog-post-item p {
+    min-height: 75px;
+}
+.vesttext {
+    float: left;
+    padding: 2em 0;
+    width: 100%;
+}
+.box-image .box-image-title {
+    display: block;
+    min-height: 100px;
+    text-decoration: none;
+}
+.image-hover {
+    margin: 0 auto;
+}
+
+.table {
+    color:#fff;
+    background-color:#051d31;
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 1370px) {
+    .weight-300 > p {
+    font-size: 14px!important;
+}
+    .tp-resizeme .btn.btn-default.btn-lg {
+    margin-right:1em;
+}
+.tp-resizeme .btn.btn-default.btn-lg >span {
+    font-size: 12px!important;
+}
+section {
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover!important;
+    box-sizing: border-box;
+    display: block;
+}
+
+    .page-header.page-header-vxlg.parallax {
+    padding-bottom: 0;
+   /* padding-top: 240px;*/
+}
+   .fullwidthbanner.revslider-initialised.tp-simpleresponsive {
+        height: 440px!important;
+    }
+}
+@media only screen and (max-width: 992px) {
+    .page-header.page-header-vxlg.parallax {
+    padding-bottom: 0;
+    padding-top: 28%;
+}
+   .fullwidthbanner.revslider-initialised.tp-simpleresponsive {
+    height: 360px;
+}
+    /* REVO slider */
+    .tp-caption .btn.btn-default.btn-lg > span {
+        font-size: 15px!important;
+        line-height: 18px!important;
+    }
+    .text_white > span {
+        font-size: 13px!important;
+        margin-top: -5px!important;
+        top: 0!important;
+        position: absolute;
+    }
+    /* REVO slider*/
+}
+
+@media only screen and (max-width: 500px) {
+    .weight-300 > p {
+    font-size: 12px!important;
+}
+.page-header.page-header-vxlg.parallax {
+    padding-bottom: 10px;
+    padding-top: 53%;*/
+}
+.page-header.page-header-vxlg.parallax {
+    background-position: center 60px;
+    background-size: 200%!important;
+}
+    .parallax h3 {
+    font-size: 30px;
+}
+    h3.active a {
+    background-color: #fab702;
+    border-radius: 20px 20px 0 0;
+    color: #fff!important;
+    padding: 7px 20px 7px;
+}
+
+   /* #sidepanel {
+    width: 320px;
+    color: #888;
+    font-size: 0.8em;
+    padding-left:6px;
+}*/
+#sidepanel {
+    width: 320px;
+    color: #888;
+    font-size: 0.9em;
+    line-height: 1.5em;
+    padding-left: 10px;
+}
+    .fullwidthbanner.revslider-initialised.tp-simpleresponsive {
+    height: 140px!important;
+}
+.ticket {
+    margin-top: 15px;
+}
+.ticket img {
+    width: 55px;
+    -webkit-transition: all 0.35s ease-out;
+       -moz-transition: all 0.35s ease-out;
+        -ms-transition: all 0.35s ease-out;
+         -o-transition: all 0.35s ease-out;
+            transition: all 0.35s ease-out;
+}
+.ticket img:hover {
+    width: 60px;
+}
+    /* REVO slider */
+    .tp-caption .btn.btn-default.btn-lg > span {
+        font-size: 10px!important;
+        line-height: 18px!important;
+    }
+    .text_white > span {
+        font-size: 13px!important;
+        margin-top: -5px!important;
+        top: 0!important;
+        position: absolute;
+    }
+    /* REVO slider*/
+
+/*
+    .btn.btn-default.btn-lg, .btn.btn-default.btn-lg > span {
+        font-size: 1.5em!important;
+        position: relative;
+    }*/
+    #topNav div.nav-main-collapse {
+        max-height: 1290px;
+        overflow-y: auto;
+    }
+    #topNav div.nav-main-collapse, #topNav div.nav-main-collapse.in {
+    background-color: rgba(5,29,49,1);
+    height: 85vh;
+}
+    #showSwitcher {
+        background-color: rgba(5,29,49, 0.5);
+        padding: 6px 10px;
+        position: fixed;
+        top: 60px;
+        z-index: 100;
+    }
+    #showSwitcher a {
+    color: #fff;
+}
+}
+.datumar a {
+    font-size: 18px!important;
+}
+.nav > li {
+    text-transform: uppercase;
+}
+#topMain.nav-pills > li > a.dropdown-toggle {
+    padding-right: 2px;
+    }
+.respimages img {
+    width: 100%;
+    height: auto;
+}

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+            
+            <ul>
+                <li><a href="index.html">Početna</a></li>
+                <li><a href="onama.html">O nama</a></li>
+                <li><a href="repertoar.html" >Repertoar</a></li>
+                <li><a href="galerija.html">Galerija</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        
+        </nav>
+
+        <div class="fas fa-bars"></div>
+
+        <div class="logo">
+            <a href="#"><h1><span>film</span>mania</h1></a>
+        </div>
+    </header>
+
+    <section id="home">
+        
+        <h3>Radno vreme</h3>
+        <h4>Od 12h do 18h</h4>
+
+        <div class="icons">
+            <a href="https://www.facebook.com/tijanaamisic" class="fab fa-facebook"></a>
+            <a href="https://www.instagram.com/t__misic/" class="fab fa-instagram"></a>
+            <a href="https://twitter.com/proklelame" class="fab fa-twitter"></a>
+        </div>
+    </section>
+
+    <br>
+    <br>
+    <br>
+
+    
+<section id="feature">
+    <h1>Uskoro na našim platnima</h1>
+    <div class="image">
+    <img src="raja.jpg" alt="">
+</div>
+
+<div class="content">
+    <h2>Raja i poslednji zmaj 3d</h2>
+     
+   <p>Davno, u čarobnom gradu Kumandra, ljudi i zmajevi živeli su zajedno u slozi. <br>
+ Ali kada su zlokobna čudovišta poznata kao Drun postala pretnja za planetu, <br>
+ zmajevi su žrtvujući sebe, spasli čovečanstvo. Sada, 500 godina kasnije, <br> 
+ ta ista čudovišta su se vratila. Usamljena ratnica Raja mora da uđe u trag <br>
+ poslednjem zmaju u nadi da će zauvek da zaustavi neprijatelja. <br>
+ Međutim, tokom svog putovanja naučiće da je za spas sveta potrebno <br>
+nešto više od magije – neophodno je i poverenje.</p> <br> <br> <br>
+<h4>1. Septembar 2021.</h4>
+</div>
+</section>
+<br> <br> <br> <br>
+<div class="aktuelno">
+<h1 style="font-size: 40px; font-weight: bold;">Aktuelno</h1>
+</div>
+<br>
+<div class="main-carousel">
+    <div class="cell"><img src="lihvarcasti.jpg" alt=""></div>
+    <div class="cell"><img src="svedok.jpg" alt=""></div>
+    <div class="cell"><img src="cuerpo.jpg" alt=""></div>
+    <div class="cell"><img src="train.jpg" alt=""></div>
+  </div>
+  <br> <br>
+  <div class="dugme"><a href="repertoar.html"><button>POGLEDAJ PONUDU</button></a></div> <br> <br> <br> <br> <br> <br>
+
+
+
+  <section id="footer">
+    <div class="footer-container">
+
+        <div class="brand">
+
+            <div class="logo">
+                <a href="index.html"><h1><span>film</span>mania</h1></a>
+            </div>
+
+            <div class="icons">
+                <a href="https://www.facebook.com/tijanaamisic" class="fab fa-facebook" data-text="facebook"></a>
+                <a href="https://www.instagram.com/t__misic/" class="fab fa-instagram" data-text="instagram"></a>
+                <a href="https://twitter.com/proklelame" class="fab fa-twitter" data-text="twitter"></a>
+            </div>
+        </div>
+
+        <div class="letter">
+            <h1>newsleter</h1>
+            <p>Prijavi se na naš Newsletter za najnovije vesti i specijalne ponude</p>
+            <input type="email" placeholder="e-mail">
+            <input type="submit" placeholder="subscribe">
+        </div>
+
+    </div>
+
+<h1 class="msg">copyright $copy; 2020 <span>mr. web designer</span> | Sva prava zadržana!</h1>
+
+</section>
+  
+
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<script type="text/javascript">
+    $('.main-carousel').flickity({
+  // options
+  cellAlign: 'left',
+  wrapAround: true,
+  freeScroll: true
+});
+</script>
+
+<script>
+    $(document).ready(function(){
+
+        $('.fa-bars').click(function(){
+       $(this).toggleClass('fa-times');
+       $('nav').toggleClass('nav-toggle');
+    });
+
+$('nav ul li a').click(function(){
+    $('.fa-bars').removeClass('fa-times');
+    $('nav').removeClass('nav-toggle');
+});
+
+    });
+</script> 
+
+
+
+</body>
+</html>

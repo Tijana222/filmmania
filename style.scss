@@ -1,0 +1,926 @@
+$pink: #E6022D;
+$bela: #fff;
+$svetlosiva: #ccc;
+$crna: black;
+
+@mixin button() {
+    height: 4rem;
+    width: 16rem;
+    background: transparent;
+    border: .1rem solid $crna;
+    outline: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: $crna;
+    font-weight: bold;
+    
+    
+
+    &:hover{
+        background: pink;
+        color: $bela;
+    }
+    
+}
+
+*{
+    font-family: 'Exo 2', sans-serif;
+    
+    transition: all .2s linear;
+    box-sizing: border-box;
+    margin: 0; padding: 0;
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+body{
+    overflow-x: hidden;
+}
+
+header{
+    text-transform: uppercase;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0; left: 0;
+    padding: 2rem 3rem;
+    z-index: 10;
+    
+
+nav{
+    ul{
+        font-style: italic;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        li{
+            margin: 1rem 1.5rem;
+
+            a{
+                font-size: 2rem;
+                text-decoration: none;
+                color: $bela;
+                padding: 1rem;
+
+                &:hover{
+                    background: $pink;
+                }
+            }
+        }
+    }
+}
+}
+
+.fa-bars{
+    font-size: 4rem;
+    color: $pink;
+    cursor: pointer;
+    margin: 0 2rem;
+    z-index: 20;
+    display: none;
+}
+
+.logo {
+    margin: 0 1.5rem;
+    font-style: italic;
+
+    a{
+        text-decoration: none;
+
+        h1{
+            font-size: 3rem;
+            color: $bela;
+
+            span{
+                color: $pink;
+            }
+        }
+    }
+}
+
+#footer{
+    height: auto;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+    background: #333;
+
+    .msg{
+        text-align: center;
+        color: $bela;
+        margin: 2rem 0;
+
+        span{
+            color: $pink;
+        }
+    }
+
+    .footer-container{
+        height: auto;
+        width: 90vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+        .brand{
+            margin: 3rem 0;
+            flex: 1 0 25rem;
+
+            .logo {
+                margin: 1rem 0;
+                font-style: italic;
+            
+                a{
+                    text-decoration: none;
+            
+                    h1{
+                        font-size: 3rem;
+                        color: $bela;
+            
+                        span{
+                            color: $pink;
+                        }
+                    }
+                }
+            }
+
+            .icons{
+                display: flex;
+                flex-flow: column;
+
+                a{
+                    text-decoration: none;
+                    color: $pink;
+                    font-size: 3rem;
+                    margin: .5rem 0;
+                    position: relative;
+
+
+                    &::after{
+                        content: attr(data-text);
+                        position: absolute;
+                        top: .8rem; left: 3.5rem;
+                        font-family: 'Exo 2', sans-serif;
+                        font-style: italic;
+                        font-size: 1.5rem;
+                        color: $bela;
+                    }
+                }
+            }
+        }
+
+       
+
+        .letter{
+            flex: 1 0 25rem;
+            margin-top: 1rem;
+
+            h1{
+                font-size: 3rem;
+                color: $pink;
+            }
+
+            p{
+                color: $bela;
+                margin: 1rem 0;
+                font-size: 1.5rem;
+            }
+
+            input{
+                height: 4rem;
+                background: $crna;
+                margin: 1rem 0;
+                padding: 0 1rem;
+                border: .1rem solid $bela;
+                outline: none;
+                color: $bela;
+                font-weight: bold;
+                width: 100%;
+                font-size: 12px;
+                text-transform: uppercase;
+    
+                &::placeholder{
+                    color: $bela;
+                }
+                &:focus{
+        background: transparent
+    }
+               
+            }
+    
+            input[type="submit"]{
+                @include button();
+                background: $crna;
+                color: $bela;
+    
+                &:hover{
+                    background: transparent;
+                }
+            }
+        }
+    }
+}
+
+.fa-times{
+    transform: rotateZ(180deg);
+}
+
+
+
+#home{
+    text-transform: uppercase;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    background: url(platno.jpg), linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.8));
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    padding-top: 5rem;
+    position: relative;
+    text-align: center;
+
+   
+    h3{
+        font-size: 7rem;
+        color: $pink;
+        margin: 1rem 0;
+    }
+    h4{
+        font-size: 5rem;
+        color: $bela;
+    }
+    .icons{
+        position: absolute;
+        bottom: 3.5rem; left: 5rem;
+        z-index: 1;
+
+        a{
+            text-decoration: none;
+            font-size: 3rem;
+            margin: 0 1rem;
+            color: $bela;
+
+            &:hover{
+                color: #333;
+            }
+        }
+    }
+}
+
+.dugme{
+    button{
+        margin: 2rem 0;
+        font-size: 2rem;
+        @include button();
+        position: absolute;
+        left: 60rem;
+        z-index: 1;
+    }
+    
+}
+
+#feature{
+    height: 130vh;
+    width: 100vw;
+    position: relative;
+    justify-content: space-around;
+    
+     background: url(admin.jpg), linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.8));
+     background-size: cover;
+     background-position: center;
+     background-blend-mode: multiply;
+     background-attachment: fixed;
+     
+    
+ 
+     h1{
+         text-transform: uppercase;
+         font-size: 4rem;
+         color: $bela;
+         text-align: center;
+         padding-top: 5rem;
+     }
+ 
+     .image{
+        margin: 5rem 15rem;
+     }
+ 
+     img{
+         width: 40rem;
+     }
+
+     .content{
+        width: 90vw;
+        position: relative;
+        bottom: 500px;
+        left: 650px;
+        
+        h2{
+            text-transform: uppercase;
+            font-size: 3rem;
+            margin: 3rem 0;
+            color: $bela;
+        }
+
+        p{
+            font-size: 17px;
+            padding-right: 6rem;
+            color: $bela;
+        }
+
+        h4{
+            color: $bela;
+        }
+    }
+}
+
+.aktuelno{
+    text-align: center;
+   
+}
+
+.cell{
+    width: 33%;
+    height: 350px;
+    margin: 0 15px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.cell img{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+#kontakt{
+    text-transform: uppercase;
+    height: 60vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    background: url(kontakt.jpg), linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.8));
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    padding-top: 5rem;
+    position: relative;
+    text-align: center;
+    
+
+    h1{
+        font-size: 9rem;
+        margin: 0 .5rem;
+        color: $bela;
+    }
+}
+
+#contact{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 80px;
+}
+
+
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-row{
+    flex-basis: 40%;
+    background: $bela;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 40px 12px;
+    box-sizing: border-box;
+
+    p{
+        font-size: 14px;
+    }
+}
+
+.poruka{
+    h1{
+        text-align: center;
+        font-size: 4rem;
+    }
+}
+
+#kontakt1{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    overflow: hidden;
+    background:url(pozadina.jpg), linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7));
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-blend-mode: multiply;
+    text-transform: uppercase;
+
+    form{
+        display: flex;
+        flex-flow: column;
+
+      
+        input{
+            height: 4rem;
+            background: $crna;
+            margin: 2rem 0;
+            padding: 0 1rem;
+            border: .1rem solid $bela;
+            outline: none;
+            color: $bela;
+            font-weight: bold;
+            width: 40vw;
+            font-size: 12px;
+            text-transform: uppercase;
+
+            &::placeholder{
+                color: $bela;
+            }
+            &:focus{
+    background: transparent
+}
+           
+        }
+
+        input[type="submit"]{
+            @include button();
+            background: $crna;
+            color: $bela;
+
+            &:hover{
+                background: transparent;
+            }
+        }
+
+        textarea{
+            resize: none;
+            background: $crna;
+            outline: none;
+            padding: 1rem;
+            color: $bela;
+            border: .1rem solid $bela;
+            font-weight: bold;
+            font-size: 12px;
+            text-transform: uppercase;
+
+            &::placeholder{
+                color: $bela;
+            }
+
+            &:focus{
+                background: transparent;
+            }
+        }
+    }
+}
+
+#o-nama{
+    height: 75vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    overflow: hidden;
+    background:url(admin.jpg), linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.8));
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-blend-mode: multiply;
+    color: $bela;
+
+    h4{
+        font-size: 4rem;
+        font-weight: bold;
+    }
+
+    p{
+        font-size: 17px;
+    }
+    
+}
+
+#o-nama1{
+  justify-content: center;
+  flex-flow: column;
+  
+  h4{
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+p{
+    font-size: 17px;
+}
+
+.img-thumbnail{
+    width: 100vw;
+}
+
+}
+
+.onama{
+    text-transform: uppercase;
+    height: 60vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    background: url(slika2.png), linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.8));
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    padding-top: 5rem;
+    position: relative;
+    text-align: center;
+    
+
+    h1{
+        font-size: 8rem;
+        margin: 0 .5rem;
+        color: $bela;
+    }
+}
+
+.galerija{
+    text-transform: uppercase;
+    height: 40vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    background: url(galerija.jpg), linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.8));
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    padding-top: 5rem;
+    position: relative;
+    text-align: center;
+    
+
+    h1{
+        font-size: 5rem;
+        margin: 0 .5rem;
+        color: $bela;
+    }
+}
+
+.item{
+    transition: .5s ease-in-out;
+}
+
+.repertoar{
+    text-transform: uppercase;
+    height: 40vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    background: url(galerija.jpg), linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.8));
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    padding-top: 5rem;
+    position: relative;
+    text-align: center;
+    
+
+    h1{
+        font-size: 5rem;
+        margin: 0 .5rem;
+        color: $bela;
+    }
+}
+
+#repertoar{
+    height: auto;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+
+    .slika{
+        margin: 5rem 15rem;
+ }
+
+ .content1{
+    width: 90vw;
+
+    h1{
+        font-size: 3rem;
+        margin: 5rem 0rem;
+    }
+
+    p{
+        font-size: 16px;
+        padding-right: 6rem;
+    }
+    .buttons{
+       padding-right: 2rem;
+       
+
+       button{
+           @include button();
+           margin: 2rem 2rem 2rem 0;
+           text-transform: uppercase;
+       }
+    }
+}
+}
+
+.zlica{
+    
+    height: 70vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    background: url(zlica1.jpg), linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.8));
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    padding-top: 5rem;
+    position: relative;
+    text-align: center;
+
+    h1{
+        text-transform: uppercase;
+        font-size: 4rem;
+        color: $bela;
+        margin-top: 20rem;
+        
+    }
+
+    p{
+        color: $bela;
+        font-size: 16px;
+    }
+}
+
+.oaza{
+    
+    height: 70vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    background: url(oaza1.jpg), linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.8));
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    padding-top: 5rem;
+    position: relative;
+    text-align: center;
+
+    h1{
+        text-transform: uppercase;
+        font-size: 4rem;
+        color: $bela;
+        margin-top: 20rem;
+        
+    }
+
+    p{
+        color: $bela;
+        font-size: 16px;
+    }
+}
+
+.sneg{
+    
+    height: 70vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    background: url(sneg1.jpg), linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.8));
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    padding-top: 5rem;
+    position: relative;
+    text-align: center;
+
+    h1{
+        text-transform: uppercase;
+        font-size: 4rem;
+        color: $bela;
+        margin-top: 20rem;
+        
+    }
+
+    p{
+        color: $bela;
+        font-size: 16px;
+    }
+}
+
+.tihomesto{
+    
+    height: 70vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    background: url(tihomesto1.jpg), linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.8));
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    padding-top: 5rem;
+    position: relative;
+    text-align: center;
+
+    h1{
+        text-transform: uppercase;
+        font-size: 4rem;
+        color: $bela;
+        margin-top: 20rem;
+        
+    }
+
+    p{
+        color: $bela;
+        font-size: 16px;
+    }
+}
+
+.pakleneulice{
+    
+    height: 70vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    background: url(paklene.jpg), linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.8));
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    padding-top: 5rem;
+    position: relative;
+    text-align: center;
+
+    h1{
+        text-transform: uppercase;
+        font-size: 4rem;
+        color: $bela;
+        margin-top: 20rem;
+        
+    }
+
+    p{
+        color: $bela;
+        font-size: 16px;
+    }
+}
+
+.tom{
+    
+    height: 70vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    background: url(tom.jpg), linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.8));
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    padding-top: 5rem;
+    position: relative;
+    text-align: center;
+
+    h1{
+        text-transform: uppercase;
+        font-size: 4rem;
+        color: $bela;
+        margin-top: 20rem;
+        
+    }
+
+    p{
+        color: $bela;
+        font-size: 16px;
+    }
+}
+
+.error{
+    color: red;
+}
+
+@media (max-width:991px) {
+    html {
+        font-size: 50%;
+    }
+}
+
+
+@media (max-width:768px) {
+    html {
+        font-size: 40%;
+    }
+
+    #repertoar{
+        flex-flow: column;
+        align-items: center;
+
+        .slika{
+            img{
+                width: 70vw;
+            }
+        }
+
+        .content1{
+            text-align: center;
+            p{
+                padding: 2rem;
+            }
+
+            .buttons{
+                padding: 0;
+            }
+        }
+    }
+}
+
+@media (max-width:620px) {
+    header {
+   .fa-bars {
+       display: block;
+   }
+
+   nav{
+       position: fixed;
+       top: 0; left: -200%;
+       height: 100vh;
+       width: 80vw;
+       background: $bela;
+       box-shadow: 30rem 0 0 rgba(0,0,0,.5);
+
+       ul{
+           height: 100%;
+           flex-flow: column;
+           justify-content: center;
+
+           li{
+               margin: 2rem 0;
+
+               a{
+                   margin: 0;
+                   font-size: 4rem;
+                   color: $pink;
+
+                   &:hover{
+                       color: $bela;
+                   }
+               }
+           }
+       }
+   }
+}
+
+.nav-toggle{
+    left: 0;
+}
+
+}
+
+
